@@ -69,8 +69,7 @@ input[type]{
 
 	/*2. set the width to fill container: 100% */
 	/*3. increase font size to: 1.5rem */
-	/*4. increase height to: 2rem */
-	width:100%;
+	/*4. increase height to: 2rem */	width:100%;
 	font-size: 1rem;
 	height: 2rem;
 }
