@@ -1,3 +1,16 @@
+
 .btn {
-    font-size: 12px;
+    font-size: 8px;
+  
+}
+
+.jumbotron{
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&h=350);
+    color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list-inline{
+    padding-top: auto;
 }
