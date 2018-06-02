@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My First Javascript Lesson</title>
+
+    <script language="javascript" type="text/javascript">
+
+        //all our javascript code here
+
+        var number = 1;
+        var name = "Roanna"; //global variable
+        var linebreak = "<br/>";
+        var names = ["angela", "chetan", "janine", "tong hwee", "christopher"]; //first position is "0", "1",....
+
+        function writeHTML() {
+            document.writeln("<h1>Hello World!!</h1>")
+            document.writeln(number);
+            document.write("<br>"); //<br> means break line
+            document.writeln(name);
+        }
+
+        function sayName() {
+            var name = "Eddie"; //local variable
+
+            alert(this.name);
+        }
+
+        function basicCalculation() {
+            var num1 = 5;
+            var num2 = 2;
+
+            document.writeln("5*2=" + (num1 * num2) + linebreak);
+            document.writeln("5/2=" + (num1 / num2) + linebreak);
+            document.writeln("5+2=" + (num1 + num2) + linebreak);
+            document.writeln("5-2=" + (num1 - num2) + linebreak);
+            document.writeln("5%2=" + (num1 % num2) + linebreak);
+
+        }
+
+        function processNumber() {
+            var number = document.getElementById("num").value;
+            var RHS = 50;
+            //alert(number);
+            if ((number > 90) && (number <= 100)) {
+                alert("Distinction");
+            }
+            else if ((number > 80) && (number < 90)) {
+                alert("A");
+            }
+            else if (number > RHS) {
+                alert("Pass");
+            }
+            else {
+                alert("Borderline pass");
+            }
+        }
+
+        function processNames() {
+            document.writeln("Nymber of items in Name:" + names.length + linebreak);
+
+            var count = 0;
+            while (count < names.length) { //start of while loop
+
+                //document.writeln(names[count] + linebreak);
+
+                console.log(names[count]); // console.log is usded for testing where developers show data in the developer's window but not browser
+
+                count++; // count = count + 1
+            } //end of while loop
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="button" value="Print Text" onclick="writeHTML()" />
+    <input type="button" value="Say Name" onclick="sayName()" />
+    <input type="button" value="Basic Calculation" onclick="basicCalculation()" />
+    <input type="button" value="Loop through Names" onclick="processNames()" />
+    <hr> Enter a Number:
+    <input type="number" id="num" />
+    <input type="button" value="Post Number" onclick="processNumber()" />
+</body>
+
+</html>
