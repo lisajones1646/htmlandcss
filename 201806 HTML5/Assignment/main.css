@@ -1,0 +1,31 @@
+.my-body{
+    background-color: rgba(61, 132, 238, 0.89)
+}
+
+.my-container{
+    max-width: 600rem; 
+    margin: 110px auto 10px auto;
+    padding: 4rem;
+}
+
+.my-face{
+    display: block;
+	width: 200px;
+	height: 200px;
+	margin: auto; 
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-top: -100px;
+}
+
+.my-hr{
+    max-width: 250px;
+    max-height: 300px;
+	border: 3px solid white;
+}
+
+.my-container h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
